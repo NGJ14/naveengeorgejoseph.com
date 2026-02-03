@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #222;
+  color: lightgoldenrodyellow;
+  font-family: Figtree, serif;
+  font-size: 1.2rem;
+}
+nav{
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 25px 40px;
+  border-radius: 50px;
+}
+.navLeft{
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+nav a {
+  text-decoration: none;
+  color: lightgoldenrodyellow;
+}
+.navRight{
+  display: flex;
+  font-size: 1.25rem;
+}
+.navRight div{
+  padding: 5px;
+  margin: 0 12px;
+  transition: .3s ease-out
+}
+.navRight div:hover, .ACTIVE{
+  color: goldenrod;
+  /* border-bottom: 3px solid ; */
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.sec1{
+  display: flex;
+  align-items: center;
+  margin: 15px 7.5px;
+  /* padding: 25px 40px; */
+}
+.sec1 div{
+  margin: 0 7.5px;
+}
+.sec1Left{
+  display: flex;
+}
+.sec1Left .pic{
+  height: 50vh;
+}
+.sec1Left .pic img{
+  height: 100%;
+  border-radius: 50px;
+  background: #111;
+  padding: 15px;
+}
+.sec1Right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  height: 50vh;
+  padding: 30px 50px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50px;
+  font-size: 1.4rem;
+}
+.sec2Heading, .sec3Heading{
+  background: #111;
+  margin: 15px;
+  padding: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+  border-radius: 50px;
+}
+.sec2{
+  background: #111;
+  margin: 15px;
+  border-radius: 50px;
+  padding: 30px;
+  line-height: 35px;
+}
+.pOne{
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.pTwo{
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: lightgray;
+}
+.sec2p1, .sec2p2{
+  border-bottom: 2px solid;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.sec3{
+  background: #111;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.sec3 div{
+  height: 25vh;
+  width: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background:white; */
+  padding: 25px;
+}
+.sec3 div img{
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  transition: 0.3s ease;
+}
+.sLogo{
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent, rgba(31, 31, 31, 0.995), transparent); 
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.sLogo:hover img {
+  filter: brightness(60%);
+}
+
+.sLogo:hover .overlay {
+  opacity: 0.8;
+}
