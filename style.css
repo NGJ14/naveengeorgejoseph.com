@@ -9,6 +9,7 @@ body{
   color: lightgoldenrodyellow;
   font-family: Figtree, serif;
   font-size: 1.2rem;
+  line-height: 35px;
 }
 nav{
   background: #111;
@@ -71,7 +72,6 @@ nav a {
   height: 50vh;
   padding: 30px 50px;
   text-align: center;
-  line-height: 35px;
   border-radius: 50px;
   font-size: 1.4rem;
 }
@@ -88,7 +88,6 @@ nav a {
   margin: 15px;
   border-radius: 50px;
   padding: 30px;
-  line-height: 35px;
 }
 .pOne{
   font-weight: 700;
@@ -155,4 +154,39 @@ nav a {
 
 .sLogo:hover .overlay {
   opacity: 0.8;
+}
+.exSec{
+  background: #111;
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 10px;
+  padding: 30px;
+  border-radius: 50px
+}
+.exSec div{
+  margin: 0 35px 0 0;
+}
+.exLogoSec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exLogoSec img{
+  width: 15vw;
+  border-radius: 20px
+}
+.exTitle{
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.exDuration{
+  font-style: italic;
+  font-size: 1rem;
+  color: lightgray;
+}
+.exRole{
+  text-decoration: underline;
+}
+.exDesc{
+  color: lightgray;
 }
