@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background: #222;
   color: lightgoldenrodyellow;
   font-family: Figtree, serif;
   font-size: 1.2rem;
   line-height: 35px;
 }
-nav{
+nav {
   background: #111;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@ nav{
   padding: 25px 40px;
   border-radius: 50px;
 }
-.navLeft{
+.navLeft {
   font-size: 2.2rem;
   font-weight: 600;
 }
@@ -28,37 +28,38 @@ nav a {
   text-decoration: none;
   color: lightgoldenrodyellow;
 }
-.navRight{
+.navRight {
   display: flex;
   font-size: 1.25rem;
 }
-.navRight div{
+.navRight div {
   padding: 5px;
   margin: 0 12px;
-  transition: .3s ease-out
+  transition: 0.3s ease-out;
 }
-.navRight div:hover, .ACTIVE{
+.navRight div:hover,
+.ACTIVE {
   color: goldenrod;
   /* border-bottom: 3px solid ; */
   font-weight: 700;
   letter-spacing: 1.2px;
 }
-.sec1{
+.sec1 {
   display: flex;
   align-items: center;
   margin: 15px 7.5px;
   /* padding: 25px 40px; */
 }
-.sec1 div{
+.sec1 div {
   margin: 0 7.5px;
 }
-.sec1Left{
+.sec1Left {
   display: flex;
 }
-.sec1Left .pic{
+.sec1Left .pic {
   height: 50vh;
 }
-.sec1Left .pic img{
+.sec1Left .pic img {
   height: 100%;
   border-radius: 50px;
   background: #111;
@@ -75,47 +76,50 @@ nav a {
   border-radius: 50px;
   font-size: 1.4rem;
 }
-.sec2Heading, .sec3Heading{
+.sec2Heading,
+.sec3Heading {
   background: #111;
   margin: 15px;
   padding: 10px;
   font-size: 1.4rem;
   text-align: center;
   border-radius: 50px;
+  color: goldenrod;
 }
-.sec2{
+.sec2 {
   background: #111;
   margin: 15px;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 30px;
 }
-.pOne{
+.pOne {
   font-weight: 700;
   font-size: 1.3rem;
 }
-.pTwo{
+.pTwo {
   display: flex;
   justify-content: space-between;
   font-style: italic;
   font-size: 1.2rem;
   color: lightgray;
 }
-.sec2p1, .sec2p2{
+.sec2p1,
+.sec2p2 {
   border-bottom: 2px solid;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-.sec3{
+.sec3 {
   background: #111;
   margin: 15px;
   padding: 30px;
-  border-radius: 50px;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.sec3 div{
+.sec3 div {
   height: 25vh;
   width: 35vh;
   display: flex;
@@ -124,20 +128,24 @@ nav a {
   /* background:white; */
   padding: 25px;
 }
-.sec3 div img{
+.sec3 div img {
   max-height: 100%;
   max-width: 100%;
   display: block;
   transition: 0.3s ease;
 }
-.sLogo{
+.sLogo {
   position: relative;
   overflow: hidden;
 }
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(transparent, rgba(31, 31, 31, 0.995), transparent); 
+  background: linear-gradient(
+    transparent,
+    rgba(31, 31, 31, 0.995),
+    transparent
+  );
   color: #fff;
   display: flex;
   align-items: center;
@@ -155,38 +163,127 @@ nav a {
 .sLogo:hover .overlay {
   opacity: 0.8;
 }
-.exSec{
+.exSec {
   background: #111;
   display: flex;
   /* justify-content: space-between; */
   margin: 10px;
   padding: 30px;
-  border-radius: 50px
+  border-radius: 10px;
 }
-.exSec div{
+.exSec div {
   margin: 0 35px 0 0;
 }
-.exLogoSec{
+.exLogoSec {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.exLogoSec img{
+.exLogoSec img {
   width: 15vw;
-  border-radius: 20px
+  border-radius: 20px;
 }
-.exTitle{
+.exTitle {
   font-weight: 700;
   font-size: 1.4rem;
 }
-.exDuration{
+.exDuration {
   font-style: italic;
   font-size: 1rem;
   color: lightgray;
 }
-.exRole{
+.exRole {
   text-decoration: underline;
 }
-.exDesc{
+.exDesc {
+  color: lightgray;
+}
+.workSec,
+.patentSec {
+  margin: 15px;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.work {
+  background: #111;
+  padding: 15px;
+  margin: 15px;
+  transition: 0.3s ease-out;
+}
+.patent {
+  background: #111;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.patentTitle:hover {
+  color: goldenrod;
+}
+.patentTitle {
+  transition: 0.2s ease-out;
+}
+.patentDeets {
+  display: flex;
+  /* justify-content: space-between; */
+  font-style: italic;
+  font-size: 1rem;
+  color: lightgray;
+}
+.patentDeets div {
+  margin: 0 35px 0 0;
+}
+.workSec div a,
+.patentSec div a {
+  text-decoration: none;
+  color: lightgoldenrodyellow;
+}
+.workImgCover {
+  height: 40vh;
+}
+.work a div img {
+  height: 100%;
+  filter: blur(8px);
+}
+.workCoverName {
+  text-align: center;
+}
+.work:hover {
+  transform: scale(1.02);
+}
+.momentSec {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.mSec {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.mSecDesc{
+  display: flex;
+  flex-direction: column;
+}
+.mSec div{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 5px 15px;
+}
+.mSecImg img{
+  border-radius: 5px;
+  height: 40vh;
+  padding: 10px 0;
+}
+.mSecDescDate{
+  font-style: italic;
   color: lightgray;
 }
